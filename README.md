@@ -8,3 +8,4 @@
   python3 jsfetcher.py https://example.com
   ```
 
+***All javascripts hava a suffix .js will be extarcted in a zip file and named after the website name***
