@@ -148,7 +148,7 @@ class Check:
 if __name__ == "__main__":
     print(ascii_art)
     if len(sys.argv) < 2:
-        print(f"{COLOR_RED}Usage: python js_grabber.py <url>{COLOR_RESET}")
+        print(f"{COLOR_RED}Usage: python jsfetcher.py <url>{COLOR_RESET}")
         sys.exit(1)
     url = sys.argv[1]
     app = Check(url)
