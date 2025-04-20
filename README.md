@@ -23,13 +23,28 @@ pip install requests beautifulsoup4 jsbeautifier
 ## 📁 Usage
 
 ```bash
-python script.py <url>
+usage: jsfetcher.py [-h] [-c COOKIES] [-p PROXY] [-b BURP_CERT] url
+
+Download and beautify JavaScript files from a URL.
+
+positional arguments:
+  url                   The URL to fetch JS files from.
+
+options:
+  -h, --help            show this help message and exit
+  -c, --cookies COOKIES
+                        Cookie string (e.g., 'name=value')
+  -p, --proxy PROXY     Use Burp Suite proxy (e.g., 'http://127.0.0.1:8080')
+  -b, --burp-cert BURP_CERT
+                        Path to Burp Suite CA certificate (for SSL verification). Please change .der format to .pem
+                        format with openssl x509 -inform der -in burp-cert.der -out burp-cert.pem
+                                                                                                                      
 ```
 
 ### Example:
 
 ```bash
-python script.py https://cisco.com
+python3 jsfetcher.py https://example.com -c 'Cookie:Example_cookie' -p http://127.0.0.1:80 -b /home/cert.pem
 ```
 
 ✅ This will:
