@@ -1,5 +1,5 @@
 
-# 🔍 JSFETCHER - A JS Snippet Extractor & Beautifier
+# 🔍 byomkesh - A JS Snippet Extractor & Beautifier
 
 This tool fetches JavaScript files from a given website URL, beautifies them using `jsbeautifier`, and saves the results in a directory named after the domain (e.g., `cisco`, `vimeo`, etc.).
 
@@ -23,7 +23,7 @@ pip install requests beautifulsoup4 jsbeautifier
 ## 📁 Usage
 
 ```bash
-usage: jsfetcher.py [-h] [-c COOKIES] [-p PROXY] [-b BURP_CERT] url
+usage: byomkesh.py [-h] [-c COOKIES] [-p PROXY] [-b BURP_CERT] url
 
 Download and beautify JavaScript files from a URL.
 
@@ -44,7 +44,7 @@ options:
 ### Example:
 
 ```bash
-python3 jsfetcher.py https://example.com -c 'Cookie:Example_cookie' -p http://127.0.0.1:80 -b /home/cert.pem
+python3 byomkesh.py https://example.com -c 'Cookie:Example_cookie' -p http://127.0.0.1:80 -b /home/cert.pem
 ```
 
 ✅ This will:

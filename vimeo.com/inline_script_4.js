@@ -1,0 +1,1 @@
+window.__i18nLocale = 'en';
