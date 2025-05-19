@@ -1,5 +1,5 @@
 
-# 🔍 Byomkesh - A JS Snippet Extractor & Beautifier
+# 🔍 Byomkesh - Personal Javascript Detective
 
 This tool fetches JavaScript files from a given website URL, beautifies them using `jsbeautifier`, and saves the results in a directory named after the domain (e.g., `example`, `vimeo`, etc.) then automatically search for api keys and secrets.
 
