@@ -284,12 +284,6 @@ class Check:
             "Asana Client ID": r"""(?i)(?:asana)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([0-9]{16})(?:['|\"|\n|\r|\s|\x60|;]|$)""",
             "Asana Client Secret": r"""(?i)(?:asana)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{32})(?:['|\"|\n|\r|\s|\x60|;]|$)"""
         }
-    def scan(self):
-        regex_list = {
-            'Google API': r'AIza[0-9A-Za-z-_]{35}',
-            "Generic API Key": r"(?i)api[_]?key.*['|\"]\w{32,45}['|\"]",
-            "Generic Secret": r"(?i)secret.*['|\"]\w{32,45}['|\"]",
-        }
         files = [os.path.join(self.domain_dir, f) for f in os.listdir(self.domain_dir) if os.path.isfile(os.path.join(self.domain_dir, f))]
         console.print("[bold red]Scanning in Progress...[/bold red]")
         found = False
