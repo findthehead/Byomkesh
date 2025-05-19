@@ -3,6 +3,9 @@
 
 This tool fetches JavaScript files from a given website URL, beautifies them using `jsbeautifier`, and saves the results in a directory named after the domain (e.g., `example`, `vimeo`, etc.).
 
+![A tribute to Saradindu Babu](https://www.getbengal.com/uploads/story_image/bomkesh-&-sadindu.jpg)
+
+
 ## 🚀 Features
 
 - Extracts all linked JS files from `<script src="...">`
