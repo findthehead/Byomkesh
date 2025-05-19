@@ -49,7 +49,7 @@ class Check:
         self.cert = cert
         self.headers = {"User-Agent": "Mozilla/5.0"}
         self.stop_event = threading.Event()
-        self.extensions = ['.js', '.jsx', '.ts', '.tsx', '.mjs', '.cjs', '.es6', '.es', '.jse', '.vue']
+        self.extensions = ['.html','.ejs','.js', '.jsx', '.ts', '.tsx', '.mjs', '.cjs', '.es6', '.es', '.jse', '.vue']
         self.domain_dir = self.extract_domain()
 
         
