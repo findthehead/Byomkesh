@@ -1,12 +1,13 @@
 
 # 🔍 byomkesh - A JS Snippet Extractor & Beautifier
 
-This tool fetches JavaScript files from a given website URL, beautifies them using `jsbeautifier`, and saves the results in a directory named after the domain (e.g., `cisco`, `vimeo`, etc.).
+This tool fetches JavaScript files from a given website URL, beautifies them using `jsbeautifier`, and saves the results in a directory named after the domain (e.g., `example`, `vimeo`, etc.).
 
 ## 🚀 Features
 
 - Extracts all linked JS files from `<script src="...">`
 - Beautifies each JavaScript file
+- Scan for know secrets and API Keys
 - Saves output in a clean folder named after the domain
 - Supports multiple extensions: `.js`, `.ts`, `.vue`, etc.
 - Fun CLI spinner and colorful output
@@ -48,9 +49,9 @@ python3 byomkesh.py https://example.com -c 'Cookie:Example_cookie' -p http://127
 ```
 
 ✅ This will:
-- Fetch all JS files from `https://cisco.com`
+- Fetch all JS files from `https://example.com`
 - Beautify them
-- Save them inside a folder named `cisco`
+- Save them inside a folder named `example.com`
 
 ## 🧠 Supported Extensions
 
