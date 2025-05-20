@@ -316,5 +316,6 @@ if __name__ == "__main__":
     result = app.download_and_beautify()
     if os.path.exists(app.domain_dir):
         app.scan()
-    if "Downloaded" in result:
-        print(result)
+        print(result)   
+    else:
+        console.print("[bold red]No Scripts Found[/bold red]")
